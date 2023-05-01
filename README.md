@@ -1,2 +1,5 @@
 # Prak1_Probstat2023_C_5025211054
-About PRAKTIKUM MODUL 1 (DISTRIBUSI PROBABILITAS) PROBSTAT 2023 / M. Armand Giovani / 5025211054 / Probstat C
+
+**<br>Nama  : M. Armand Giovani**
+**<br>NRP   : 5025211054**
+**<br>Kelas : Probstat C**
