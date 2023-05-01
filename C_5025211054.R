@@ -87,6 +87,13 @@ prob_4_kematian_simulasi
 prob_lebih_dari_4_simulasi
 prob_paling_banyak_4_simulasi
 
+# h. Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda.
+Berdasarkan simulasi yang telah dilakukan, distribusi banyak kematian akibat kanker tulang memiliki bentuk yang mirip dengan distribusi Poisson 
+dengan parameter λ = 1,8. Simulasi juga menunjukkan bahwa probabilitas mengalami 4 kematian akibat kanker tulang dalam 20 tahun sebesar 0,1329, 
+sedangkan hasil analisis pada pertanyaan 2d menunjukkan probabilitas sebesar 0,1276. Perbedaan tersebut dapat disebabkan oleh kebetulan dalam 
+sampel simulasi atau perbedaan metode perhitungan. Namun, secara umum, hasil analisis dan simulasi menunjukkan bahwa kemungkinan mengalami 
+kematian akibat kanker tulang dalam 20 tahun di pabrik ban cukup tinggi dan peristiwa 4 kematian dalam 20 tahun dapat dikatakan tidak biasa 
+dengan tingkat signifikansi 0,05.
 
 #NO.3
 
@@ -130,36 +137,36 @@ x <- rnorm(10000, mean, sd)
 hist(x, breaks = 50, col = "lightblue", main = "Histogram Distribusi Normal", xlab = "Nilai")
 
 # c. Nilai varian (σ²) dari hasil data bangkitan acak distribusi Normal
-variance <- var(x)
-variance
+varians = (sd(x))^2
+paste("σ² =", varians)
 
 
 #NO. 5
 
-# 1. Probabilitas terjadinya suatu peristiwa acak X kurang dari -2,34 dengan 6 derajat kebebasan
+# a. Probabilitas terjadinya suatu peristiwa acak X kurang dari -2,34 dengan 6 derajat kebebasan
 pt(-2.34, df = 6)
 
-# 2. Probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan
+# b. Probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan
 1 - pt(1.34, df = 6)
 
-# 3. Probabilitas terjadinya suatu peristiwa acak X kurang dari -1,23 atau lebih besar dari 1,23 dengan 3 derajat kebebasan
+# c. Probabilitas terjadinya suatu peristiwa acak X kurang dari -1,23 atau lebih besar dari 1,23 dengan 3 derajat kebebasan
 pt(-1.23, df = 3) + (1 - pt(1.23, df = 3))
 
-# 4. Probabilitas terjadinya suatu peristiwa acak X berada di antara -0,94 dan 0,94 dengan 14 derajat kebebasan
+# d. Probabilitas terjadinya suatu peristiwa acak X berada di antara -0,94 dan 0,94 dengan 14 derajat kebebasan
 pt(0.94, df = 14) - pt(-0.94, df = 14)
 
-# 5. Nilai t-score dengan 5 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di sebelah kiri t-score tersebut
+# e. Nilai t-score dengan 5 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di sebelah kiri t-score tersebut
 qt(0.0333, df = 5, lower.tail = TRUE)
 
-# 6. Nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 
+# f. Nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 
 qt(0.125, df = 25, lower.tail = FALSE)
 
-# 7. Nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75 satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari nilai t-score tersebut
+# g. Nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75 satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari nilai t-score tersebut
 t_score_right <- qt(0.25 + (0.75 / 2), df = 11, lower.tail = FALSE)
 t_score_left <- qt(0.25 + (0.75 / 2), df = 11, lower.tail = TRUE)
 t_score_right - abs(t_score_left)
 
-# 8. Nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut
+# h. Nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut
 t_score_right <- qt(0.0333 / 2, df = 23, lower.tail = FALSE)
 t_score_left <- qt(0.0333 / 2, df = 23, lower.tail = TRUE)
 abs(t_score_left) + t_score_right
