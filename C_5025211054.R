@@ -88,12 +88,12 @@ prob_lebih_dari_4_simulasi
 prob_paling_banyak_4_simulasi
 
 # h. Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda.
-Berdasarkan simulasi yang telah dilakukan, distribusi banyak kematian akibat kanker tulang memiliki bentuk yang mirip dengan distribusi Poisson 
-dengan parameter λ = 1,8. Simulasi juga menunjukkan bahwa probabilitas mengalami 4 kematian akibat kanker tulang dalam 20 tahun sebesar 0,1329, 
-sedangkan hasil analisis pada pertanyaan 2d menunjukkan probabilitas sebesar 0,1276. Perbedaan tersebut dapat disebabkan oleh kebetulan dalam 
-sampel simulasi atau perbedaan metode perhitungan. Namun, secara umum, hasil analisis dan simulasi menunjukkan bahwa kemungkinan mengalami 
-kematian akibat kanker tulang dalam 20 tahun di pabrik ban cukup tinggi dan peristiwa 4 kematian dalam 20 tahun dapat dikatakan tidak biasa 
-dengan tingkat signifikansi 0,05.
+# Berdasarkan simulasi yang telah dilakukan, distribusi banyak kematian akibat kanker tulang memiliki bentuk yang mirip dengan distribusi Poisson 
+# dengan parameter λ = 1,8. Simulasi juga menunjukkan bahwa probabilitas mengalami 4 kematian akibat kanker tulang dalam 20 tahun sebesar 0,1329, 
+# sedangkan hasil analisis pada pertanyaan 2d menunjukkan probabilitas sebesar 0,1276. Perbedaan tersebut dapat disebabkan oleh kebetulan dalam 
+# sampel simulasi atau perbedaan metode perhitungan. Namun, secara umum, hasil analisis dan simulasi menunjukkan bahwa kemungkinan mengalami 
+# kematian akibat kanker tulang dalam 20 tahun di pabrik ban cukup tinggi dan peristiwa 4 kematian dalam 20 tahun dapat dikatakan tidak biasa 
+# dengan tingkat signifikansi 0,05.
 
 #NO.3
 
